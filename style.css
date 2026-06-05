@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3e4c5e; /* Fundo cinza escuro exato do print */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.carousel-box {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    max-width: 900px; /* Largura do container branco */
+    padding: 50px 70px; /* Espaçamento interno */
+    border-radius: 12px; /* Arredondamento externo */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Sombra suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides-viewport {
+    width: 100%;
+    overflow: hidden; /* Esconde as imagens que não estão ativas */
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação de deslize suave */
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa toda a largura visível */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Arredondamento da imagem exato */
+}
+
+/* Estilização dos Botões */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3e4c5e; /* Cor das setas do print */
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s, opacity 0.3s;
+    z-index: 10;
+}
+
+.nav-btn:hover {
+    background-color: #2c3642; /* Escurece no hover */
+}
+
+.nav-btn.prev {
+    left: 15px; /* Posição à esquerda */
+}
+
+.nav-btn.next {
+    right: 15px; /* Posição à direita */
+}
+
+/* Opcional: Feedback visual quando botão está desativado (primeiro/último slide) */
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
