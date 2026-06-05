@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="carousel-box">
+            
+            <button class="nav-btn prev" id="prevBtn">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+
+            <div class="slides-viewport">
+                <div class="slides-container" id="slides">
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1473&auto=format&fit=crop" alt="Praia Pôr do Sol">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?q=80&w=1470&auto=format&fit=crop" alt="Praia Coqueiros">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=1632&auto=format&fit=crop" alt="Floresta">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1470&auto=format&fit=crop" alt="Tecnologia">
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn next" id="nextBtn">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
